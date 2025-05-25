@@ -1,0 +1,73 @@
+.link-wrapper {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 8px;
+}
+
+.link-wrapper > a {
+  text-decoration: none;
+}
+
+.link-button-wrapper,
+.live-button {
+  display: flex;
+  align-items: center;
+  gap: 4px;
+  padding: 8px;
+  border: 2px solid #333;
+  border-radius: 8px;
+  background: transparent;
+  cursor: pointer;
+  transition: all 0.2s ease;
+  color: #333;
+  font-size: 1rem;
+}
+
+.link-button-wrapper:hover,
+.live-button:hover {
+  border-color: #ec4899;
+  color: #ec4899;
+}
+
+.link-button-wrapper:hover .icon,
+.live-button:hover svg {
+  fill: #ec4899 !important;
+}
+
+/* Ensure SVG icons inherit text color */
+.link-button-wrapper svg,
+.live-button svg,
+.icon {
+  fill: currentColor;
+  transition: fill 0.2s ease;
+}
+
+.link-wrapper.dark .link-button-wrapper,
+.link-wrapper.dark .live-button {
+  border-color: #fff;
+  color: #fff;
+}
+
+.link-wrapper.dark .link-button-wrapper:hover,
+.link-wrapper.dark .live-button:hover {
+  border-color: #ec4899;
+  color: #ec4899;
+}
+
+.link-wrapper.dark .link-button-wrapper:hover .icon,
+.link-wrapper.dark .live-button:hover svg {
+  fill: #ec4899 !important;
+}
+
+/* Responsive adjustments */
+@media (max-width: 768px) {
+  .link-wrapper {
+    justify-content: center;
+  }
+
+  .link-button-wrapper,
+  .live-button {
+    padding: 6px;
+    font-size: 0.9rem;
+  }
+}
