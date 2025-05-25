@@ -9,13 +9,11 @@ import useMediaQuery from "../../../hooks/useMediaQuery";
 import StyleContext from "../../../contexts/StyleContext";
 import {ChevronRight, ChevronLeft} from "lucide-react";
 
-import {
-  foodlens1,
-  foodlens2,
-  foodlens3,
-  foodlens4,
-  foodlens5
-} from "../../../assets/projectsImage";
+import foodlens1 from "../../../assets/projectsImage/foodlens_img/foodlens_1.jpg";
+import foodlens2 from "../../../assets/projectsImage/foodlens_img/foodlens_2.jpg";
+import foodlens3 from "../../../assets/projectsImage/foodlens_img/foodlens_3.jpg";
+import foodlens4 from "../../../assets/projectsImage/foodlens_img/foodlens_4.jpg";
+import foodlens5 from "../../../assets/projectsImage/foodlens_img/foodlens_5.jpg";
 
 export default function FoodlensDetails() {
   const {isDark} = useContext(StyleContext);
