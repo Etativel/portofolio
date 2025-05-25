@@ -15,7 +15,7 @@ import {
   foodlens3,
   foodlens4,
   foodlens5
-} from "../../../assets/projectsImage";
+} from "../../../../public/projectsImage";
 
 export default function FoodlensDetails() {
   const {isDark} = useContext(StyleContext);
