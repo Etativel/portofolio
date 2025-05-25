@@ -15,7 +15,9 @@ import {
   foodlens3,
   foodlens4,
   foodlens5
-} from "../../../../public/projectsImage";
+} from "../../../assets/projectsImage";
+
+import {javascript} from "../../../assets/projectStackIcon";
 
 export default function FoodlensDetails() {
   const {isDark} = useContext(StyleContext);
@@ -128,7 +130,7 @@ export default function FoodlensDetails() {
           >
             <img
               // src={isDark ? nodesDark : nodesLight}
-              src={projectImage[imgIndex]}
+              src={javascript}
               alt="project image"
               className="project-img"
               aria-label="project mobile view"
