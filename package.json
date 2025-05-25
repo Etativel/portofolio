@@ -24,8 +24,8 @@
   },
   "scripts": {
     "predeploy": "npm run build",
-    "start": "node fetch.js && react-scripts start",
     "build": "node fetch.js && react-scripts build",
+    "start": "node fetch.js && serve -s build -l $PORT",
     "deploy": "gh-pages -b master -d build",
     "test": "react-scripts test",
     "eject": "react-scripts eject",
@@ -58,6 +58,7 @@
     "dotenv": "^8.2.0",
     "postcss": "^8.5.3",
     "prettier": "^2.3.1",
+    "serve": "^14.2.4",
     "tailwindcss": "^3.4.17"
   }
 }
