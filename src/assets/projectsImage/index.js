@@ -16,7 +16,14 @@ import node3_b from "./nodesblog_img/dark/3.jpg";
 import node4_b from "./nodesblog_img/dark/4.jpg";
 import node5_b from "./nodesblog_img/dark/5.jpg";
 
+import cv1 from "./CvMaker_img/1.jpg";
+import cv2 from "./CvMaker_img/2.jpg";
+import cv3 from "./CvMaker_img/3.jpg";
+
 export {
+  cv1,
+  cv2,
+  cv3,
   foodlens1,
   foodlens2,
   foodlens3,
