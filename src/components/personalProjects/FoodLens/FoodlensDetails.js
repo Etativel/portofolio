@@ -126,7 +126,7 @@ export default function FoodlensDetails() {
           >
             <img
               // src={isDark ? nodesDark : nodesLight}
-              src={projectImage[imgIndex]}
+              src={foodlens1}
               alt="project image"
               className="project-img"
               aria-label="project mobile view"
