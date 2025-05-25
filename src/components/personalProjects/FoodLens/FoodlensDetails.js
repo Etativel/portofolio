@@ -1,7 +1,7 @@
 /* eslint-disable jsx-a11y/img-redundant-alt */
 /* eslint-disable jsx-a11y/alt-text */
 import "./FoodlensDetails.scss";
-import {useContext} from "react";
+import {useContext, useState, useEffect} from "react";
 import FoodlensStack from "./FoodlensStack";
 import FoodlensLinks from "./FoodlensLinks";
 import {motion} from "framer-motion";
@@ -9,36 +9,38 @@ import useMediaQuery from "../../../hooks/useMediaQuery";
 import StyleContext from "../../../contexts/StyleContext";
 import {ChevronRight, ChevronLeft} from "lucide-react";
 
-import foodlens1 from "../../../assets/projectsImage/foodlens_img/foodlens_1.jpg";
-// import foodlens2 from "../../../assets/projectsImage/foodlens_img/foodlens_2.jpg";
-// import foodlens3 from "../../../assets/projectsImage/foodlens_img/foodlens_3.jpg";
-// import foodlens4 from "../../../assets/projectsImage/foodlens_img/foodlens_4.jpg";
-// import foodlens5 from "../../../assets/projectsImage/foodlens_img/foodlens_5.jpg";
+import {
+  foodlens1,
+  foodlens2,
+  foodlens3,
+  foodlens4,
+  foodlens5
+} from "../../../assets/projectsImage";
 
 export default function FoodlensDetails() {
   const {isDark} = useContext(StyleContext);
   const isLg = useMediaQuery("(min-width: 1024px)");
-  // const [imgIndex, setImgIndex] = useState(0);
+  const [imgIndex, setImgIndex] = useState(0);
 
-  // const projectImage = [foodlens2, foodlens1, foodlens3, foodlens4, foodlens5];
+  const projectImage = [foodlens2, foodlens1, foodlens3, foodlens4, foodlens5];
 
-  // function handleImageIndexChange(increase) {
-  //   setImgIndex(prev => {
-  //     if (increase) {
-  //       return (prev + 1) % projectImage.length;
-  //     } else {
-  //       return (prev - 1 + projectImage.length) % projectImage.length;
-  //     }
-  //   });
-  // }
+  function handleImageIndexChange(increase) {
+    setImgIndex(prev => {
+      if (increase) {
+        return (prev + 1) % projectImage.length;
+      } else {
+        return (prev - 1 + projectImage.length) % projectImage.length;
+      }
+    });
+  }
 
-  // useEffect(() => {
-  //   const interval = setInterval(() => {
-  //     setImgIndex(prev => (prev + 1) % projectImage.length);
-  //   }, 5000);
+  useEffect(() => {
+    const interval = setInterval(() => {
+      setImgIndex(prev => (prev + 1) % projectImage.length);
+    }, 5000);
 
-  //   return () => clearInterval(interval);
-  // }, [projectImage.length]);
+    return () => clearInterval(interval);
+  }, [projectImage.length]);
 
   return (
     <span className="project-wrapper">
@@ -126,7 +128,7 @@ export default function FoodlensDetails() {
           >
             <img
               // src={isDark ? nodesDark : nodesLight}
-              src={foodlens1}
+              src={projectImage[imgIndex]}
               alt="project image"
               className="project-img"
               aria-label="project mobile view"
@@ -134,13 +136,13 @@ export default function FoodlensDetails() {
           </motion.div>
           <div className="carousel-btn-container">
             <button
-              // onClick={() => handleImageIndexChange(false)}
+              onClick={() => handleImageIndexChange(false)}
               className="carousel-btn"
             >
               <ChevronLeft className={`arrow ${isDark ? "dark-theme" : ""}`} />
             </button>
             <button
-              // onClick={() => handleImageIndexChange(true)}
+              onClick={() => handleImageIndexChange(true)}
               className="carousel-btn"
             >
               <ChevronRight className={`arrow ${isDark ? "dark-theme" : ""}`} />
