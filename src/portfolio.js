@@ -235,7 +235,7 @@ const workExperiences = {
     {
       role: "Data Analyst Intern",
       company: "BMKG",
-      companylogo: require("./assets/images/bmkgLogo.png"),
+      companylogo: require("./assets/images/CvMaker_img/1.jpg"),
       date: "Jun 2023 – Sep 2023",
       desc: "Conducting research to predict fire-prone areas utilizing Convolutional Neural Networks (CNN) and estimating the extent of area burned through regression analysis.",
       companyUrl: "https://www.bmkg.go.id/",
