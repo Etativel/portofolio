@@ -5,10 +5,7 @@ import StyleContext from "../../../contexts/StyleContext";
 import {
   javascript,
   css,
-  tailwind,
   vite,
-  reactRouterBlack,
-  reactRouterWhite,
   vercelIconBlack,
   vercelIconWhite,
   reactIcon,
