@@ -2,8 +2,17 @@ import "./personalProjects.scss";
 import {Fade} from "react-reveal";
 import {
   NodesBlogDetails,
-  FoodlensDetails
+  FoodlensDetails,
+  CvMakerDetails,
+  FileUploaderDetails
 } from "../../components/personalProjects";
+
+const projects = [
+  <FoodlensDetails />,
+  <NodesBlogDetails />,
+  <FileUploaderDetails />,
+  <CvMakerDetails />
+];
 
 export default function PersonalProjects() {
   return (
@@ -14,26 +23,19 @@ export default function PersonalProjects() {
             <h1 className="projects-title">Projects</h1>
           </span>
           <div className="projects-container">
-            <Fade
-              bottom
-              duration={1000}
-              distance="20px"
-              className="project-fade"
-            >
-              <div className="project-fade">
-                <FoodlensDetails />
-              </div>
-            </Fade>
-            <Fade
-              bottom
-              duration={1000}
-              distance="20px"
-              className="project-fade"
-            >
-              <div className="project-fade">
-                <NodesBlogDetails />
-              </div>
-            </Fade>
+            {projects.map((project, index) => {
+              return (
+                <Fade
+                  key={index}
+                  bottom
+                  duration={1000}
+                  distance="20px"
+                  className="project-fade"
+                >
+                  <div className="project-fade">{project}</div>
+                </Fade>
+              );
+            })}
           </div>
         </section>
       </div>

@@ -20,7 +20,14 @@ import cv1 from "./CvMaker_img/1.jpg";
 import cv2 from "./CvMaker_img/2.jpg";
 import cv3 from "./CvMaker_img/3.jpg";
 
+import fu1 from "./FileUploader_img/1.jpg";
+import fu2 from "./FileUploader_img/2.jpg";
+import fu3 from "./FileUploader_img/3.jpg";
+
 export {
+  fu1,
+  fu2,
+  fu3,
   cv1,
   cv2,
   cv3,

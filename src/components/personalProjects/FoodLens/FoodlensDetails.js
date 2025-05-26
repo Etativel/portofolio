@@ -1,7 +1,7 @@
 /* eslint-disable jsx-a11y/img-redundant-alt */
 /* eslint-disable jsx-a11y/alt-text */
 import "./FoodlensDetails.scss";
-import {useContext, useState, useEffect} from "react";
+import {useContext, useState} from "react";
 import FoodlensStack from "./FoodlensStack";
 import FoodlensLinks from "./FoodlensLinks";
 import {motion} from "framer-motion";
@@ -34,13 +34,13 @@ export default function FoodlensDetails() {
     });
   }
 
-  useEffect(() => {
-    const interval = setInterval(() => {
-      setImgIndex(prev => (prev + 1) % projectImage.length);
-    }, 5000);
+  // useEffect(() => {
+  //   const interval = setInterval(() => {
+  //     setImgIndex(prev => (prev + 1) % projectImage.length);
+  //   }, 5000);
 
-    return () => clearInterval(interval);
-  }, [projectImage.length]);
+  //   return () => clearInterval(interval);
+  // }, [projectImage.length]);
 
   return (
     <span className="project-wrapper">

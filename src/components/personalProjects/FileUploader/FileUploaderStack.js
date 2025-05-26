@@ -1,5 +1,5 @@
-import "./NodesBlogStack.scss";
 import {useContext} from "react";
+import "./FileUploaderStack.scss";
 import StyleContext from "../../../contexts/StyleContext";
 
 import {
@@ -10,39 +10,21 @@ import {
   postgresIconBlack,
   nodeIcon,
   prisma,
-  tailwind,
-  vite,
-  chartjs,
-  materialui,
-  reactRouterBlack,
-  reactRouterWhite,
   postgresIconWhite,
   passport,
   cloudinary,
   railwayDark,
-  railwayLight,
-  reactIcon
+  railwayLight
 } from "../../../assets/projectStackIcon";
 
-function NodesBlogStack() {
+export default function FileUploaderStack() {
   const {isDark} = useContext(StyleContext);
   const icons = [
-    // Core language & build
+    // Core language
     {src: javascript, alt: "javascript"},
-    {src: reactIcon, alt: "React Js"},
-    {src: vite, alt: "vite"},
 
     // Styling
     {src: css, alt: "css"},
-    {src: tailwind, alt: "tailwind css"},
-
-    // UI components & client libs
-    {src: materialui, alt: "material ui"},
-    {
-      src: isDark ? reactRouterWhite : reactRouterBlack,
-      alt: "react router"
-    },
-    {src: chartjs, alt: "chart.js"},
 
     // Server runtime & framework
     {src: nodeIcon, alt: "node.js"},
@@ -61,14 +43,9 @@ function NodesBlogStack() {
       alt: "postgresql"
     },
 
-    // Storage/Media
+    // Cloud storage
     {src: cloudinary, alt: "cloudinary"},
-
-    // Deployment
-    {
-      src: isDark ? railwayDark : railwayLight,
-      alt: "Railway"
-    }
+    {src: isDark ? railwayDark : railwayLight, alt: "railway"}
   ];
 
   return (
@@ -82,5 +59,3 @@ function NodesBlogStack() {
     </div>
   );
 }
-
-export default NodesBlogStack;

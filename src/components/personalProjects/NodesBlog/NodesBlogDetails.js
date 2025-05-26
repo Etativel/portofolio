@@ -1,7 +1,7 @@
 /* eslint-disable jsx-a11y/img-redundant-alt */
 /* eslint-disable jsx-a11y/alt-text */
 import "./NodesBlogDetails.scss";
-import {useContext, useState, useEffect} from "react";
+import {useContext, useState} from "react";
 import NodesBlogStack from "./NodesBlogStack";
 import NodesBlogLinks from "./NodesBlogLinks";
 import {motion} from "framer-motion";
@@ -41,14 +41,14 @@ export default function NodesBlogDetails() {
     });
   }
 
-  useEffect(() => {
-    if (isHovered) return;
-    const interval = setInterval(() => {
-      setImgIndex(prev => (prev + 1) % projectImageL.length);
-    }, 5000);
+  // useEffect(() => {
+  //   if (isHovered) return;
+  //   const interval = setInterval(() => {
+  //     setImgIndex(prev => (prev + 1) % projectImageL.length);
+  //   }, 5000);
 
-    return () => clearInterval(interval);
-  }, [projectImageL.length, isHovered]);
+  //   return () => clearInterval(interval);
+  // }, [projectImageL.length, isHovered]);
 
   return (
     <span className="project-wrapper">

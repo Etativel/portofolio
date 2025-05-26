@@ -38,7 +38,18 @@ import openAiDark from "../favicons/open-ai-white.svg";
 
 import huggingFace from "../favicons/hugging-face-svgrepo-com.svg";
 
+import reactIcon from "../favicons/react-original-wordmark.svg";
+
+import vercelIconWhite from "../favicons/vercel-white.svg";
+import vercelIconBlack from "../favicons/vercel-black.svg";
+
+import htmlIcon from "../favicons/html5-original-wordmark.svg";
+
 export {
+  htmlIcon,
+  vercelIconWhite,
+  vercelIconBlack,
+  reactIcon,
   huggingFace,
   pyTorch,
   flaskLight,

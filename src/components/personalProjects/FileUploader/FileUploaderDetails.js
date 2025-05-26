@@ -1,22 +1,22 @@
 /* eslint-disable jsx-a11y/img-redundant-alt */
 /* eslint-disable jsx-a11y/alt-text */
-import "./CvMakerDetails.scss";
+import "./FileUploaderDetails.scss";
 import {useContext, useState} from "react";
-import CvMakerStack from "./CvMakerStack";
-import CvMakerLinks from "./CvMakerLinks";
+import FileUploaderStack from "./FileUploaderStack";
+import FileUploaderLinks from "./FileUploaderLinks";
 import {motion} from "framer-motion";
 import useMediaQuery from "../../../hooks/useMediaQuery";
 import StyleContext from "../../../contexts/StyleContext";
 import {ChevronRight, ChevronLeft} from "lucide-react";
 
-import {cv1, cv2, cv3} from "../../../assets/projectsImage";
+import {fu1, fu2, fu3} from "../../../assets/projectsImage";
 
-export default function CvMakerDetails() {
+export default function FileUploaderDetails() {
   const {isDark} = useContext(StyleContext);
   const isLg = useMediaQuery("(min-width: 1024px)");
   const [imgIndex, setImgIndex] = useState(0);
 
-  const projectImage = [cv1, cv2, cv3];
+  const projectImage = [fu1, fu2, fu3];
 
   function handleImageIndexChange(increase) {
     setImgIndex(prev => {
@@ -38,14 +38,14 @@ export default function CvMakerDetails() {
 
   return (
     <span className="project-wrapper">
-      <h1 className="project-index">4.</h1>
+      <h1 className="project-index">3.</h1>
       <div className={`project-container ${isDark ? "dark-theme" : ""}`}>
         <div className="project-shadow-bg"></div>
         <div className="project-text">
           <div>
-            <h1 className="project-title">CV Maker</h1>
+            <h1 className="project-title">CloudNest</h1>
             <h2 className="project-subtitle">
-              User-friendly CV builder designed for software engineers
+              A file manager with cloud storage and sharing
             </h2>
           </div>
           <div className="project-content">
@@ -53,63 +53,49 @@ export default function CvMakerDetails() {
               <div>
                 <h2 className="project-about">About</h2>
                 <p className="project-info">
-                  CV Maker is a web app that helps software engineers create
-                  resumes easily. It offers a clean template with real-time
-                  preview and works well on both desktop and mobile. Users can
-                  fill out their details and download the resume as a PDF using{" "}
-                  <em className="text-blue-500 not-italic">html2canvas</em>
+                  CloudNest is a file manager that handles file and folder
+                  operations, cloud uploads, and URL sharing. It implements user
+                  authentication with{" "}
+                  <em className="text-blue-500 not-italic">Passport.js</em> and{" "}
+                  <em className="text-blue-500 not-italic">bcrypt</em> hashing,
+                  renders views with{" "}
+                  <em className="text-blue-500 not-italic">EJS</em> templates,
+                  and stores files on{" "}
+                  <em className="text-blue-500 not-italic">Cloudinary</em>.
+                  Users can create, delete, and rename files and folders, upload
+                  files with public URLs for sharing, and access their files
+                  through protected routes, built with{" "}
+                  <em className="text-blue-500 not-italic">Express.js</em> and{" "}
+                  <em className="text-blue-500 not-italic">Node.js</em> using{" "}
+                  <em className="text-blue-500 not-italic">Prisma ORM</em> with{" "}
+                  <em className="text-blue-500 not-italic">PostgreSQL</em>.
                 </p>
                 <br />
                 <p className="project-further-info">
-                  <strong>Key Features:</strong>
-                  <br />
-                  <ul>
-                    <li>
-                      <em className="text-blue-500 not-italic">
-                        ATS-Friendly:
-                      </em>{" "}
-                      Layout designed to work well with Applicant Tracking
-                      Systems.
-                    </li>
-                    <li>
-                      <em className="text-blue-500 not-italic">
-                        Professional Template:
-                      </em>{" "}
-                      Tailored for software engineer resumes.
-                    </li>
-                    <li>
-                      <em className="text-blue-500 not-italic">
-                        Real-Time Preview:
-                      </em>{" "}
-                      See updates as you type.
-                    </li>
-                    <li>
-                      <em className="text-blue-500 not-italic">
-                        Responsive Design:
-                      </em>{" "}
-                      Looks great on desktop and mobile.
-                    </li>
-                    <li>
-                      <em className="text-blue-500 not-italic">
-                        Download to PDF:
-                      </em>{" "}
-                      Easily export your resume.
-                    </li>
-                  </ul>
-                  <strong>Technologies Used:</strong>
-                  <br />
-                  <em className="text-blue-500 not-italic">React</em> with
-                  <em className="text-blue-500 not-italic">Vite</em>,{" "}
-                  <em className="text-blue-500 not-italic">html2canvas</em>,{" "}
-                  <em className="text-blue-500 not-italic">JsPDF</em>,{" "}
-                  deployment via
-                  <em className="text-blue-500 not-italic">Vercel</em>, and
-                  styled using <em className="text-blue-500 not-italic">CSS</em>
+                  File uploads use{" "}
+                  <em className="text-blue-500 not-italic">Multer</em>{" "}
+                  middleware with{" "}
+                  <em className="text-blue-500 not-italic">Cloudinary</em> API
+                  integration. Sessions are managed with{" "}
+                  <em className="text-blue-500 not-italic">express-session</em>{" "}
+                  and <em className="text-blue-500 not-italic">Passport.js</em>{" "}
+                  handles login/logout flow. Database operations use{" "}
+                  <em className="text-blue-500 not-italic">Prisma ORM</em>{" "}
+                  connected to{" "}
+                  <em className="text-blue-500 not-italic">
+                    Supabase PostgreSQL
+                  </em>
+                  . Views are server-rendered with{" "}
+                  <em className="text-blue-500 not-italic">EJS</em> templates
+                  and <em className="text-blue-500 not-italic">CSS</em> styling.
+                  The app includes flash messaging for user feedback,
+                  authentication middleware, and full CRUD operations for files
+                  and folders.
                 </p>
               </div>
 
-              <CvMakerLinks />
-              <CvMakerStack />
+              <FileUploaderLinks />
+              <FileUploaderStack />
             </div>
           </div>
         </div>

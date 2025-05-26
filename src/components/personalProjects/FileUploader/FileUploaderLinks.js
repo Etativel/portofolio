@@ -1,9 +1,9 @@
-import "./CvMakerLinks.scss";
+import "./FileUploaderLinks.scss";
 import {useContext, useEffect, useState} from "react";
 import Client from "../../svg/Client";
 import StyleContext from "../../../contexts/StyleContext";
 
-export default function CvMakerLinks() {
+export default function FileUploaderLinks() {
   const {isDark} = useContext(StyleContext);
   const [mounted, setMounted] = useState(false);
 
@@ -15,7 +15,7 @@ export default function CvMakerLinks() {
     mounted && (
       <div className={isDark ? "link-wrapper dark" : "link-wrapper"}>
         <a
-          href="https://github.com/Etativel/cv-maker"
+          href="https://github.com/Etativel/file-uploader"
           target="_blank"
           rel="noreferrer"
         >
@@ -26,7 +26,7 @@ export default function CvMakerLinks() {
         </a>
 
         <a
-          href="https://cv-maker-liard-phi.vercel.app/"
+          href="https://uploader.up.railway.app"
           target="_blank"
           rel="noreferrer"
         >
