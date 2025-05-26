@@ -26,7 +26,7 @@ export default function NodesBlogDetails() {
   const {isDark} = useContext(StyleContext);
   const isLg = useMediaQuery("(min-width: 1024px)");
   const [imgIndex, setImgIndex] = useState(0);
-  const [isHovered, setIsHovered] = useState(false);
+  // const [isHovered, setIsHovered] = useState(false);
 
   const projectImageL = [node1_l, node2_l, node3_l, node4_l, node5_l];
   const projectImageB = [node1_b, node2_b, node3_b, node4_b, node5_b];
@@ -107,8 +107,8 @@ export default function NodesBlogDetails() {
         </div>
         <div className={`project-image-wrapper`}>
           <motion.div
-            onMouseEnter={() => setIsHovered(true)}
-            onMouseLeave={() => setIsHovered(false)}
+            // onMouseEnter={() => setIsHovered(true)}
+            // onMouseLeave={() => setIsHovered(false)}
             whileHover={{
               x: isLg ? -100 : 0,
               scale: isLg ? 1.2 : 1.1,
@@ -131,8 +131,8 @@ export default function NodesBlogDetails() {
           </motion.div>
           <div
             className="carousel-btn-container"
-            onMouseEnter={() => setIsHovered(true)}
-            onMouseLeave={() => setIsHovered(false)}
+            // onMouseEnter={() => setIsHovered(true)}
+            // onMouseLeave={() => setIsHovered(false)}
           >
             <button
               onClick={() => handleImageIndexChange(false)}
