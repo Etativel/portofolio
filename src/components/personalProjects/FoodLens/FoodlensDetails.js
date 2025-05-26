@@ -9,20 +9,27 @@ import useMediaQuery from "../../../hooks/useMediaQuery";
 import StyleContext from "../../../contexts/StyleContext";
 import {ChevronRight, ChevronLeft} from "lucide-react";
 
-import {
-  foodlens1,
-  foodlens2,
-  foodlens3,
-  foodlens4,
-  foodlens5
-} from "../../../assets/projectsImage";
+// import {
+//   foodlens1,
+//   foodlens2,
+//   foodlens3,
+//   foodlens4,
+//   foodlens5
+// } from "../../../assets/projectsImage";
 
 export default function FoodlensDetails() {
   const {isDark} = useContext(StyleContext);
   const isLg = useMediaQuery("(min-width: 1024px)");
   const [imgIndex, setImgIndex] = useState(0);
 
-  const projectImage = [foodlens2, foodlens1, foodlens3, foodlens4, foodlens5];
+  // const projectImage = [foodlens2, foodlens1, foodlens3, foodlens4, foodlens5];
+  const projectImage = [
+    "https://res.cloudinary.com/dgndmndq3/image/upload/v1748264485/foodlens_2_jtolsc.jpg",
+    "https://res.cloudinary.com/dgndmndq3/image/upload/v1748264481/foodlens_1_tqjgsk.jpg",
+    "https://res.cloudinary.com/dgndmndq3/image/upload/v1748264484/foodlens_3_d7nhwj.jpg",
+    "https://res.cloudinary.com/dgndmndq3/image/upload/v1748264490/foodlens_4_d42bp6.jpg",
+    "https://res.cloudinary.com/dgndmndq3/image/upload/v1748264483/foodlens_5_auw0sp.jpg"
+  ];
 
   function handleImageIndexChange(increase) {
     setImgIndex(prev => {
