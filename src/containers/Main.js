@@ -8,6 +8,7 @@ import Achievement from "./achievement/Achievement";
 import Education from "./education/Education";
 import ScrollToTopButton from "./topbutton/Top";
 import PersonalProjects from "./personalProjects/PersonalProjects";
+import ScrollAnimationContainer from "./scrollAnimation/ScrollAnimation";
 import Profile from "./profile/Profile";
 import SplashScreen from "./splashScreen/SplashScreen";
 import {splashScreen} from "../portfolio";
@@ -46,6 +47,7 @@ const Main = () => {
           <>
             <Header />
             <Greeting />
+            <ScrollAnimationContainer />
             <Skills />
             <Education />
             <WorkExperience />
