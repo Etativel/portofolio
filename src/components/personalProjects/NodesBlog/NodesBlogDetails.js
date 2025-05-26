@@ -9,18 +9,18 @@ import useMediaQuery from "../../../hooks/useMediaQuery";
 import StyleContext from "../../../contexts/StyleContext";
 import {ChevronRight, ChevronLeft} from "lucide-react";
 
-import {
-  node1_b,
-  node2_b,
-  node3_b,
-  node4_b,
-  node5_b,
-  node1_l,
-  node2_l,
-  node3_l,
-  node4_l,
-  node5_l
-} from "../../../assets/projectsImage";
+// import {
+//   node1_b,
+//   node2_b,
+//   node3_b,
+//   node4_b,
+//   node5_b,
+//   node1_l,
+//   node2_l,
+//   node3_l,
+//   node4_l,
+//   node5_l
+// } from "../../../assets/projectsImage";
 
 export default function NodesBlogDetails() {
   const {isDark} = useContext(StyleContext);
@@ -28,15 +28,27 @@ export default function NodesBlogDetails() {
   const [imgIndex, setImgIndex] = useState(0);
   // const [isHovered, setIsHovered] = useState(false);
 
-  const projectImageL = [node1_l, node2_l, node3_l, node4_l, node5_l];
-  const projectImageB = [node1_b, node2_b, node3_b, node4_b, node5_b];
+  // const projectImageL = [node1_l, node2_l, node3_l, node4_l, node5_l];
+  // const projectImage = [node1_b, node2_b, node3_b, node4_b, node5_b];
+  const projectImage = [
+    "https://res.cloudinary.com/dgndmndq3/image/upload/v1748264491/1_y4cjuh.jpg",
+    "https://res.cloudinary.com/dgndmndq3/image/upload/v1748264490/2_o4chlg.jpg",
+    "https://res.cloudinary.com/dgndmndq3/image/upload/v1748264488/3_yjwz9s.jpg",
+    "https://res.cloudinary.com/dgndmndq3/image/upload/v1748264488/4_mo13ap.jpg",
+    "https://res.cloudinary.com/dgndmndq3/image/upload/v1748264494/5_zutqxn.jpg",
+    "https://res.cloudinary.com/dgndmndq3/image/upload/v1748264494/1_wyvxgt.jpg",
+    "https://res.cloudinary.com/dgndmndq3/image/upload/v1748264495/2_gjcacg.jpg",
+    "https://res.cloudinary.com/dgndmndq3/image/upload/v1748264496/3_lglvne.jpg",
+    "https://res.cloudinary.com/dgndmndq3/image/upload/v1748264495/4_hugnqq.jpg",
+    "https://res.cloudinary.com/dgndmndq3/image/upload/v1748264496/5_kdh1uj.jpg"
+  ];
 
   function handleImageIndexChange(increase) {
     setImgIndex(prev => {
       if (increase) {
-        return (prev + 1) % projectImageL.length;
+        return (prev + 1) % projectImage.length;
       } else {
-        return (prev - 1 + projectImageL.length) % projectImageL.length;
+        return (prev - 1 + projectImage.length) % projectImage.length;
       }
     });
   }
@@ -123,7 +135,7 @@ export default function NodesBlogDetails() {
           >
             <img
               // src={isDark ? nodesDark : nodesLight}
-              src={isDark ? projectImageB[imgIndex] : projectImageL[imgIndex]}
+              src={projectImage[imgIndex]}
               alt="project image"
               className="project-img"
               aria-label="project mobile view"

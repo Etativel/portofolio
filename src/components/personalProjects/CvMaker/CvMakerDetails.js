@@ -9,14 +9,18 @@ import useMediaQuery from "../../../hooks/useMediaQuery";
 import StyleContext from "../../../contexts/StyleContext";
 import {ChevronRight, ChevronLeft} from "lucide-react";
 
-import {cv1, cv2, cv3} from "../../../assets/projectsImage";
+// import {cv1, cv2, cv3} from "../../../assets/projectsImage";
 
 export default function CvMakerDetails() {
   const {isDark} = useContext(StyleContext);
   const isLg = useMediaQuery("(min-width: 1024px)");
   const [imgIndex, setImgIndex] = useState(0);
 
-  const projectImage = [cv1, cv2, cv3];
+  const projectImage = [
+    "https://res.cloudinary.com/dgndmndq3/image/upload/v1748264485/1_ie6kwq.jpg",
+    "https://res.cloudinary.com/dgndmndq3/image/upload/v1748264484/2_ik7uxj.jpg",
+    "https://res.cloudinary.com/dgndmndq3/image/upload/v1748264490/3_x2waoz.jpg"
+  ];
 
   function handleImageIndexChange(increase) {
     setImgIndex(prev => {

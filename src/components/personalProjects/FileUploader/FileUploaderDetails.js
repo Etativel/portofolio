@@ -9,14 +9,18 @@ import useMediaQuery from "../../../hooks/useMediaQuery";
 import StyleContext from "../../../contexts/StyleContext";
 import {ChevronRight, ChevronLeft} from "lucide-react";
 
-import {fu1, fu2, fu3} from "../../../assets/projectsImage";
+// import {fu1, fu2, fu3} from "../../../assets/projectsImage";
 
 export default function FileUploaderDetails() {
   const {isDark} = useContext(StyleContext);
   const isLg = useMediaQuery("(min-width: 1024px)");
   const [imgIndex, setImgIndex] = useState(0);
 
-  const projectImage = [fu1, fu2, fu3];
+  const projectImage = [
+    "https://res.cloudinary.com/dgndmndq3/image/upload/v1748264481/1_uswy3p.jpg",
+    "https://res.cloudinary.com/dgndmndq3/image/upload/v1748264481/2_qgpowa.jpg",
+    "https://res.cloudinary.com/dgndmndq3/image/upload/v1748264481/3_bo35zx.jpg"
+  ];
 
   function handleImageIndexChange(increase) {
     setImgIndex(prev => {
