@@ -62,7 +62,7 @@ const greeting = {
   subTitle:
     "Building web applications with passion and creativity. Data science and machine learning enthusiast",
   resumeLink:
-    "https://drive.google.com/uc?export=download&id=1KsOjnTv7P2TIt_3NDPQCpvVKW9bXAMEh",
+    "https://drive.google.com/uc?export=download&id=1T3wbX5O-6Iy6COx4_LEpNxevPFTeXnso",
   displayGreeting: true
 };
 
@@ -70,7 +70,7 @@ const greeting = {
 
 const socialMediaLinks = {
   github: "https://github.com/etativel",
-  linkedin: "https://www.linkedin.com/in/muhammad-farhan-m-082989271/",
+  linkedin: "https://www.linkedin.com/in/muhammad-farhan-maulana-55b104368/",
   gmail: "farhanmaulana.dev@gmail.com",
   display: true
 };
@@ -300,8 +300,8 @@ const contactInfo = {
   title: emoji("Contact Me ☎️"),
   subtitle:
     "Discuss a project or just want to say hi? My Inbox is open for all.",
-  number: "+92-0000000000",
-  email_address: "saadpasta70@gmail.com"
+  number: "+62-82145479632",
+  email_address: "farhanmaulana.dev@gmail.com"
 };
 
 // Twitter Section
