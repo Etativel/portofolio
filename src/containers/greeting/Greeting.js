@@ -25,7 +25,9 @@ export default function Greeting() {
               </p>
               <p
                 className={
-                  isDark ? "dark-mode greeting-text-second" : "greeting-text"
+                  isDark
+                    ? "dark-mode greeting-text-second"
+                    : "greeting-text-second"
                 }
               >
                 {greeting.secondTitle}
