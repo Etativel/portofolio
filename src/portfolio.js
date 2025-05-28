@@ -70,7 +70,7 @@ const greeting = {
 
 const socialMediaLinks = {
   github: "https://github.com/etativel",
-  linkedin: "https://www.linkedin.com/in/muhammad-farhan-maulana-55b104368/",
+  linkedin: "https://www.linkedin.com/in/muhammad-farhan-m-082989271/",
   gmail: "farhanmaulana.dev@gmail.com",
   display: true
 };
