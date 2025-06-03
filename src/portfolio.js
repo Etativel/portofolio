@@ -62,7 +62,7 @@ const greeting = {
   subTitle:
     "Building web applications with passion and creativity. Data science and machine learning enthusiast",
   resumeLink:
-    "https://drive.google.com/uc?export=download&id=1T3wbX5O-6Iy6COx4_LEpNxevPFTeXnso",
+    "https://drive.google.com/uc?export=download&id=1RvFBNkdacXi6DbCtyQLCrpkomzYvV20k",
   displayGreeting: true
 };
 
@@ -70,7 +70,7 @@ const greeting = {
 
 const socialMediaLinks = {
   github: "https://github.com/etativel",
-  linkedin: "https://www.linkedin.com/in/muhammad-farhan-m-082989271/",
+  linkedin: "https://www.linkedin.com/in/muhammad-farhan-maulana-a39371369/",
   gmail: "farhanmaulana.dev@gmail.com",
   display: true
 };
