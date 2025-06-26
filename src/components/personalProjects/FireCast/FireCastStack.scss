@@ -1,0 +1,23 @@
+.stack-container {
+  display: flex;
+  flex-direction: column;
+  max-width: 500px;
+  gap: 4px;
+}
+
+.stack-title {
+  padding: 8px 0 0 0;
+  font-weight: bold;
+}
+
+.tech-icons {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 8px;
+}
+
+.tech-icon {
+  width: 48px;
+  height: 48px;
+  object-fit: contain;
+}

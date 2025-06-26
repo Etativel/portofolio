@@ -45,7 +45,21 @@ import vercelIconBlack from "../favicons/vercel-black.svg";
 
 import htmlIcon from "../favicons/html5-original-wordmark.svg";
 
+import maptilerNoText from "../favicons/maptiler-notext.png";
+
+import openlayerIcon from "../favicons/openlayers-svgrepo-com.svg";
+
+import tensorflowIcon from "../favicons/tensorflow-svgrepo-com.svg";
+
+import openCvIcon from "../favicons/OpenCV_logo_black.svg";
+import openCvWhite from "../favicons/OpenCV_logo_white.svg";
+
 export {
+  openCvWhite,
+  openCvIcon,
+  maptilerNoText,
+  openlayerIcon,
+  tensorflowIcon,
   htmlIcon,
   vercelIconWhite,
   vercelIconBlack,

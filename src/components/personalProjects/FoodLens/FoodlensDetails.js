@@ -58,7 +58,7 @@ export default function FoodlensDetails() {
           <div>
             <h1 className="project-title">FoodLens</h1>
             <h2 className="project-subtitle">
-              Smart nutrition tracking with AI-powered food recognition
+              Smart Nutrition Tracking with AI-Powered Food Recognition
             </h2>
           </div>
           <div className="project-content">

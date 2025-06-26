@@ -240,7 +240,8 @@ const workExperiences = {
       desc: "Conducting research to predict fire-prone areas utilizing Convolutional Neural Networks (CNN) and estimating the extent of area burned through regression analysis.",
       companyUrl: "https://www.bmkg.go.id/",
       credentials: false,
-      credLink: ""
+      credLink: "",
+      project: "firecast"
     },
     {
       role: "Machine Learning Cohort",
@@ -253,7 +254,8 @@ const workExperiences = {
       credentials: true,
 
       credLink:
-        "https://drive.google.com/file/d/1Q9zX01pdWjR7mgtLiSXxj4sFNvlCYguR/view?usp=sharing"
+        "https://drive.google.com/file/d/1Q9zX01pdWjR7mgtLiSXxj4sFNvlCYguR/view?usp=sharing",
+      project: ""
     }
   ]
 };

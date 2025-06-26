@@ -1,0 +1,219 @@
+@import "../../../globalColor";
+
+.project-wrapper {
+  display: flex;
+  width: 100%;
+  padding: 0.5rem;
+  gap: 1.25rem;
+  margin-top: 40px;
+  margin-bottom: 40px;
+  @media (min-width: 640px) {
+    padding: 1.25rem;
+  }
+
+  @media (max-width: 640px) {
+    justify-content: center;
+  }
+}
+
+.project-index {
+  font-size: 4rem;
+  display: none;
+  width: 5rem;
+  margin-top: 0px;
+
+  @media (min-width: 640px) {
+    display: flex;
+  }
+}
+
+.project-container {
+  display: flex;
+  flex-direction: column;
+  position: relative;
+  width: 100%;
+  max-width: 83.333%;
+  background-color: white;
+  border: 2px solid black;
+  border-radius: 0.375rem;
+  padding: 1rem;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+
+  &.dark-theme {
+    background-color: black;
+    border-color: white;
+  }
+
+  @media (min-width: 1024px) {
+    flex-direction: row;
+  }
+}
+
+.project-shadow-bg {
+  display: none;
+  position: absolute;
+  top: 0.75rem;
+  left: 0.75rem;
+  height: 100%;
+  width: 100%;
+  background-color: black;
+  border-radius: 0.75rem;
+  z-index: -10;
+
+  .dark-theme & {
+    background-color: white;
+  }
+
+  @media (min-width: 640px) {
+    display: flex;
+  }
+}
+
+.project-text {
+  display: flex;
+  flex-direction: column;
+}
+
+.project-title {
+  font-size: 1.875rem;
+  margin-top: 0px;
+  margin-bottom: 0px;
+
+  .dark-theme & {
+    color: $textColorDark;
+  }
+}
+
+.project-subtitle {
+  font-size: 1.25rem;
+  color: #93c5fd;
+  margin-top: 0px;
+  margin-bottom: 0px;
+  font-weight: 500;
+  padding-top: 6px;
+}
+
+.project-content {
+  display: flex;
+}
+
+.project-info-container {
+  padding: 0.5rem;
+  padding-right: 1.25rem;
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+}
+
+.project-about {
+  font-weight: bold;
+  margin-top: 12px;
+  margin-bottom: 0px;
+  font-size: 1.5rem;
+
+  .dark-theme & {
+    color: $textColorDark;
+  }
+}
+
+.project-info {
+  margin-top: 0px;
+  margin-bottom: 0px;
+  font-size: 1rem;
+
+  .dark-theme & {
+    color: $textColorDark;
+  }
+}
+
+.project-further-info {
+  font-size: 1rem;
+  margin-top: 0px;
+  margin-bottom: 0px;
+}
+
+.text-blue-500 {
+  color: #4299e1;
+}
+
+.project-section-title {
+  font-size: 1.5rem;
+  font-weight: bold;
+}
+
+.project-image-wrapper {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 0.5rem;
+  &.dark-theme {
+    background-color: black;
+    border-color: white;
+  }
+}
+
+.project-motion {
+  border-radius: 0.75rem;
+  overflow: hidden;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.15);
+  background-color: white;
+  z-index: 10;
+  .dark-theme & {
+    background-color: black;
+  }
+}
+
+.project-img {
+  max-width: 100%;
+  min-width: 300px;
+  max-height: 550px;
+  background-color: transparent;
+  object-fit: contain;
+
+  .dark-theme & {
+    background-color: transparent;
+  }
+}
+
+.carousel-btn-container {
+  display: flex;
+  justify-content: space-around;
+  width: 100%;
+  transform: translateX(10px);
+  z-index: 5;
+}
+
+.carousel-btn {
+  background: rgba(255, 255, 255, 0.1);
+  backdrop-filter: blur(10px);
+  border: 1px solid rgba(255, 255, 255, 0.2);
+  border-radius: 50%;
+  padding: 12px;
+  transition: all 0.3s ease;
+  cursor: pointer;
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+}
+
+.carousel-btn:active {
+  transform: scale(0.95);
+}
+
+.carousel-btn:focus,
+.carousel-btn:active {
+  -webkit-tap-highlight-color: transparent;
+}
+
+.arrow {
+  color: black;
+  opacity: 0.9;
+  transition: opacity 0.3s ease;
+}
+
+.arrow.dark-theme {
+  color: white;
+}
+
+.carousel-btn:hover .arrow {
+  opacity: 1;
+}

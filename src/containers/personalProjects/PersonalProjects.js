@@ -4,12 +4,14 @@ import {
   NodesBlogDetails,
   FoodlensDetails,
   CvMakerDetails,
-  FileUploaderDetails
+  FileUploaderDetails,
+  FireCastDetails
 } from "../../components/personalProjects";
 
 const projects = [
   <FoodlensDetails />,
   <NodesBlogDetails />,
+  <FireCastDetails />,
   <FileUploaderDetails />,
   <CvMakerDetails />
 ];

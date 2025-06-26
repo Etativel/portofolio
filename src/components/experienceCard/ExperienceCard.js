@@ -102,6 +102,19 @@ export default function ExperienceCard({cardInfo, isDark}) {
               See Credentials
             </span>
           )}
+          {cardInfo.project && (
+            <span
+              className={isDark ? "dark-mode project-tag" : "project-tag"}
+              onClick={() => {
+                const target = document.getElementById("firecast");
+                if (target) {
+                  target.scrollIntoView({behavior: "smooth"});
+                }
+              }}
+            >
+              Related Project
+            </span>
+          )}
         </div>
       </div>
     </div>

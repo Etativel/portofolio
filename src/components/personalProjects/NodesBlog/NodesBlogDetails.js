@@ -70,7 +70,7 @@ export default function NodesBlogDetails() {
         <div className="project-text">
           <div>
             <h1 className="project-title">Nodes - A Full Stack Blog</h1>
-            <h2 className="project-subtitle">Blog with moderation system</h2>
+            <h2 className="project-subtitle">Blog with Moderation System</h2>
           </div>
           <div className="project-content">
             <div className="project-info-container">

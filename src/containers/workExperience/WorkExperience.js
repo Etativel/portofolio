@@ -29,7 +29,8 @@ export default function WorkExperience() {
                         descBullets: card.descBullets,
                         companyUrl: card.companyUrl,
                         credentials: card.credentials,
-                        credLink: card.credLink
+                        credLink: card.credLink,
+                        project: card.project
                       }}
                     />
                   );

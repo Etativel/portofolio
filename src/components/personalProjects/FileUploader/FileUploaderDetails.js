@@ -42,14 +42,14 @@ export default function FileUploaderDetails() {
 
   return (
     <span className="project-wrapper">
-      <h1 className="project-index">3.</h1>
+      <h1 className="project-index">4.</h1>
       <div className={`project-container ${isDark ? "dark-theme" : ""}`}>
         <div className="project-shadow-bg"></div>
         <div className="project-text">
           <div>
             <h1 className="project-title">CloudNest</h1>
             <h2 className="project-subtitle">
-              A file manager with cloud storage and sharing
+              A File Manager with Cloud Storage and Sharing
             </h2>
           </div>
           <div className="project-content">

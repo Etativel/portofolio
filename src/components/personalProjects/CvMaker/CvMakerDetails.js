@@ -42,14 +42,14 @@ export default function CvMakerDetails() {
 
   return (
     <span className="project-wrapper">
-      <h1 className="project-index">4.</h1>
+      <h1 className="project-index">5.</h1>
       <div className={`project-container ${isDark ? "dark-theme" : ""}`}>
         <div className="project-shadow-bg"></div>
         <div className="project-text">
           <div>
             <h1 className="project-title">CV Maker</h1>
             <h2 className="project-subtitle">
-              User-friendly CV builder designed for software engineers
+              User-friendly CV Builder Designed for Software Engineers
             </h2>
           </div>
           <div className="project-content">
