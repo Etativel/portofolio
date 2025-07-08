@@ -62,7 +62,7 @@ const greeting = {
   subTitle:
     "Building web applications with passion and creativity. Data science and machine learning enthusiast",
   resumeLink:
-    "https://drive.google.com/uc?export=download&id=1RvFBNkdacXi6DbCtyQLCrpkomzYvV20k",
+    "https://drive.google.com/uc?export=download&id=19OvLE-snG_RNBpWxs4TuSQtBZdZO6MoF",
   displayGreeting: true
 };
 
