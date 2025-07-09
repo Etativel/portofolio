@@ -21,13 +21,15 @@ import {
   reactRouterWhite,
   tensorflowIcon,
   openCvIcon,
-  openCvWhite
+  openCvWhite,
+  typeScript
 } from "../../../assets/projectStackIcon";
 
 export default function FireCastStack() {
   const {isDark} = useContext(StyleContext);
   const icons = [
     // Core language & bundler
+    {src: typeScript, alt: "typeScript"},
     {src: javascript, alt: "javascript"},
     {src: vite, alt: "vite"},
 

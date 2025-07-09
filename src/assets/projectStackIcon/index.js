@@ -54,7 +54,10 @@ import tensorflowIcon from "../favicons/tensorflow-svgrepo-com.svg";
 import openCvIcon from "../favicons/OpenCV_logo_black.svg";
 import openCvWhite from "../favicons/OpenCV_logo_white.svg";
 
+import typeScript from "../favicons/typescript-original.svg";
+
 export {
+  typeScript,
   openCvWhite,
   openCvIcon,
   maptilerNoText,
